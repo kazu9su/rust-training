@@ -1,4 +1,5 @@
-#[macro_use] extern crate nickel;
+#[macro_use]
+extern crate nickel;
 
 use std::collections::HashMap;
 use nickel::{Nickel, HttpRouter};
@@ -10,8 +11,8 @@ fn main() {
         let mut data = HashMap::new();
         data.insert("color", "Green");
         data.insert("name", "Carifornia Apple");
-        data.insert("price", "2.50");
-        return _res.render("assets/hello.tpl", &data);
+       data.insert("price", "2.50");
+       return _res.render("assets/hello.tpl", &data);
     });
 
     server.listen("192.168.33.10:2000");
