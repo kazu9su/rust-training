@@ -1,0 +1,6 @@
+[package]
+name = "adder"
+version = "0.1.0"
+authors = ["Tomy <kazushige.tominaga@mkt-apps.com>"]
+
+[dependencies]
